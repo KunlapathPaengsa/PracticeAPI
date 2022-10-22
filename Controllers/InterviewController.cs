@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Reflection;
 
 namespace PracticeAPI.Controllers
 {
@@ -29,14 +26,14 @@ namespace PracticeAPI.Controllers
                     {
                         //Type yy = reader[0].GetType();
                         //Console.WriteLine($"{yy}");
-                     var xxx = reader[0];
-                        var xxxxx = reader[1];
-                        var xxxx = reader[2];
+                        //var xxx = reader[0];
+                        //var xxxxx = reader[1];
+                        //var xxxx = reader[2];
 
                         //type.get .Parse(xxx)
 
 
-                        var xx = reader.VisibleFieldCount;
+                        //var xx = reader.VisibleFieldCount;
                         result.Add(new Customer
                         {
                             Id = reader.GetInt32(0),
