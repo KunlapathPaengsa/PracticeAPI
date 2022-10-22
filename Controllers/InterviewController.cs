@@ -10,7 +10,6 @@ namespace PracticeAPI.Controllers
         [HttpGet("get")]
         public List<Customer> Get()
         {
-
             var sqlQuery = "SELECT *  FROM Customers";
             try
             {
@@ -29,10 +28,7 @@ namespace PracticeAPI.Controllers
                         //var xxx = reader[0];
                         //var xxxxx = reader[1];
                         //var xxxx = reader[2];
-
                         //type.get .Parse(xxx)
-
-
                         //var xx = reader.VisibleFieldCount;
                         result.Add(new Customer
                         {
